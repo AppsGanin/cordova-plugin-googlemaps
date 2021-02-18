@@ -473,6 +473,7 @@
  */
 -(void)animateCamera:(CDVInvokedUrlCommand *)command
 {
+  [self stopAnimation:command];
   [self updateCameraPosition:@"animateCamera" command:command];
 }
 
