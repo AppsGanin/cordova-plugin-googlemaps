@@ -1503,6 +1503,7 @@ public class PluginMap extends MyPlugin implements OnMarkerClickListener,
    * @throws JSONException
    */
   public void animateCamera(JSONArray args, CallbackContext callbackContext) throws JSONException {
+    this.stopAnimation(args, callbackContext);
     this.updateCameraPosition("animateCamera", args, callbackContext);
   }
 
